@@ -1,0 +1,27 @@
+.displayFlex1 {
+    display: flex;
+}
+
+footer {
+    background-color: @cor2;
+    color: @cor3;
+    padding: 16px 0;
+
+    .container {
+        .displayFlex1();
+        justify-content: flex-end;
+    }
+
+    .rede-social {
+        .displayFlex1();
+
+        li {
+            margin-left: 24px;
+
+            a {
+                color: @cor3;
+                text-decoration: none;
+            }
+        }
+    }
+}

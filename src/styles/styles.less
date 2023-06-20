@@ -1,0 +1,68 @@
+@import "variaveis.less";
+@import "produtos.less";
+@import "rest.less";
+@import "rodape.less";
+@breakpointMobile: ~"(max-width: 767px)";
+@breakpointTablet: ~"(max-width: 1023px)";
+
+
+.displayFlex1 {
+    display: flex;
+}
+
+body {
+    background-color: @cor1;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+
+    @media @breakpointTablet {
+        max-width: 80%;
+    }
+}
+
+header {
+    background-color: @cor2;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+    .container {
+        .displayFlex1();
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 0;
+    }
+}
+
+.menu {
+    .displayFlex1();
+
+    li {
+        font-weight: bold;
+        margin-left: 24px;
+
+        a {
+            color: @cor3;
+            text-decoration: none;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
